@@ -1,38 +1,42 @@
 {
    "bridge":{
       "name":"SapphirePi",
-      "username":"73:61:70:70:68:69:72:65",
+      "username":"73:61:70:70:68:69",
       "port":7277,
       "pin":"736-17-070"
    },
-   "platforms":[
-
-   ],
-   "accessories":[
+   "platforms": [
       {
-         "accessory":"RaspberryPiTemperature",
-         "name":"Pi Sapphire CPU Temp"
-      },
-      {
-          "accessory": "HTTP-SWITCH",
-          "name": "Double Down",
+      "platform": "HttpWebHooks",
+      "webhook_port": "7278",
 
-          "switchType": "stateless",
-
-          "timeout": 1000,
-
-          "onUrl": "http://localhost/api/double-down"
-        },
+      "statelessswitches": [
         {
-            "accessory": "HTTP-SWITCH",
-            "name": "Up",
+          "id": "sapphire_joystick",
+          "name": "Sapphire Joystick",
+          "buttons": [
+            {
+              "name": "Up"
+            },
+            {
+              "name": "Down"
+            },
+            {
+              "name": "Left"
+            },
+            {
+              "name": "Right"
+            },
+            {
+              "name": "Core"
+            }
+          ]
+        }
+      ]
+      }
+    ],
 
-            "switchType": "stateless",
-
-            "timeout": 1000,
-
-            "onUrl": "http://localhost/api/up"
-          }
+   "accessories":[
 
    ]
 }
