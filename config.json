@@ -1,0 +1,38 @@
+{
+   "bridge":{
+      "name":"SapphirePi",
+      "username":"CC:22:3D:E3:CE:30",
+      "port":51826,
+      "pin":"031-45-154"
+   },
+   "platforms":[
+
+   ],
+   "accessories":[
+      {
+         "accessory":"RaspberryPiTemperature",
+         "name":"Pi Sapphire CPU Temp"
+      },
+      {
+          "accessory": "HTTP-SWITCH",
+          "name": "Double Down",
+
+          "switchType": "stateless",
+
+          "timeout": 1000,
+
+          "onUrl": "http://localhost/api/double-down"
+        },
+        {
+            "accessory": "HTTP-SWITCH",
+            "name": "Up",
+
+            "switchType": "stateless",
+
+            "timeout": 1000,
+
+            "onUrl": "http://localhost/api/up"
+          }
+
+   ]
+}
