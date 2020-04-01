@@ -1,7 +1,7 @@
 # Sapphire Pi Config.json
 
 
-##Top Level
+## Top Level
 
 To generate unique identifiers for this homebridge instance, the Pi's name Sapphire was:
 
