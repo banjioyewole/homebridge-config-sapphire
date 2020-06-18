@@ -13,7 +13,7 @@ Converted from ASCII to HEX and used for all values except the port, which Conve
 
 With a chron jobs:
 ```
-0 0 * * * /usr/bin/homebridge
-@reboot python /home/pi/Desktop/Networked-Button/networked_button.py &
+0 * * * * pkill homebridge && /usr/bin/homebridge
 @reboot homebridge &
+@reboot python /home/pi/Desktop/Networked-Button/networked_button.py &
 ```
