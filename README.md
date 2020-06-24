@@ -1,7 +1,8 @@
 # Sapphire Pi Config.json
 
 ### Unique Homebridge Instance Identifiers
-We use the name of your Pi/Computer to generate unique hombridge instance Identifiers. We make a deal of this because these identifiers can easily collide with other devices if you're not careful. You should re-name your Raspberry Pi (or whatever computer you're using) Our house uses gemstone names for our Pi, hence "Sapphire Pi"
+Homekit Bridges require unique idientifiers to be added to your home. We make a deal of this because these identifiers can easily collide with other devices if you're not careful. To be safe use the name of your Pi/Computer to generate unique hombridge instance Identifiers. You should re-name your Raspberry Pi (or whatever computer you're using) Our house uses gemstone names for our Pi, hence "Sapphire Pi" See [homebridge-config-sapphire/config.json](https://github.com/banjioyewole/homebridge-config-sapphire/blob/master/config.json) for specifics.
+
 
 ### Conversion Schemes
 
